@@ -17,6 +17,7 @@ import androidx.lifecycle.ViewModelProvider;
 import com.example.project.CustomArrayAdapter;
 import com.example.project.ListItemClass;
 import com.example.project.R;
+
 import com.example.project.databinding.FragmentNotifBinding;
 
 import org.jsoup.Jsoup;
@@ -50,7 +51,7 @@ public class NotifFragment extends Fragment {
 
         final TextView textView = binding.textNotif;
 
-        listView = (ListView)root.findViewById(R.id.listView_notif);
+        //listView = (ListView)root.findViewById(R.id.listView_notif);
         arrayList = new ArrayList<>();
         adapter = new CustomArrayAdapter(getActivity(), R.layout.listitem1, arrayList, getLayoutInflater());
         listView.setAdapter(adapter);
